@@ -20,4 +20,3 @@ for point in destinations:
 
   # Print out `geopy`'s results.
   print("{0} is located at ({1:.4f}, {2: .4f})".format(point, loc.latlng[0], loc.latlng[1]))
-
