@@ -113,7 +113,7 @@ Capilano Suspension Bridge is located at (49.3429, -123.1149)
 
 ## Check Your Work
 
-Take a look at [the solution](solutions/solution.py) to check your work!
+Take a look at the solution branch to check your work!
 
 ## Done and Done!
 
