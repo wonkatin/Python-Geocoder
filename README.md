@@ -1,14 +1,3 @@
-# Python Modules, Packages, and APIs
-
-<!---
-This assignment was developed by Brandi
-
-Questions? Comments?
-1. Log an issue to this repo to alert me of a problem.
-2. Suggest an edit yourself by forking this repo, making edits, and submitting a pull request with your changes back to our master branch.
-3. Hit me up on Slack at @brandib.
---->
-
 # Python Modules, Packages, and APIs: Practice Problems, Part 1
 
 In this assignment, you're going to write code for a challenge problem.
