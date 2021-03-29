@@ -15,9 +15,9 @@ In this assignment, you're going to write code for a challenge problem.
 
 You will practice these programming concepts we've covered in class:
 
-* Including and using modules and packages
+- Including and using modules and packages
 
-**Note:** This lab is Part 1 of a two-part assignment. Save your solution code â€” the next homework will build off of it!
+**Note:** This lab is Part 1 of a two-part assignment. Save your solution code--the next homework will build off of it!
 
 ---
 
@@ -25,7 +25,7 @@ You will practice these programming concepts we've covered in class:
 
 This lab will be a two-part code challenge with a bonus. It will be a little different than the other assignments because Part 2 will build on the code from Part 1. You can put all of your code in one file called `solution.py`. Right now, just make that one file.
 
-*Reminder: On your laptop, you can run the file from your command line with the following:*
+_Reminder: On your laptop, you can run the file from your command line with the following:_
 
 ```python
 python solution.py
@@ -33,11 +33,11 @@ python solution.py
 
 > **Hint:** Make sure you are printing something out with the `print` statement. Otherwise, you won't see any output from running your program!
 
-
 ## Requirements:
 
 By the end of this, you should have:
-* A file called `solution.py` with your code from this challenge.
+
+- A file called `solution.py` with your code from this challenge.
 
 ---
 
@@ -105,7 +105,6 @@ Sandpoint, Idaho is located at (48.2766, -116.5535)
 Banff National Park is located at (51.4968, -115.9281)
 Capilano Suspension Bridge is located at (49.3429, -123.1149)
 ```
-
 
 > **Hint:** We're following the pattern in the `geonames` example in the [docs](https://geocoder.readthedocs.io/results.html), only replacing `geonames` with `arcgis`.
 
