@@ -1,3 +1,5 @@
+One possible set of solutions to this assignment. Original readme follows:
+
 # Python Modules, Packages, and APIs: Practice Problems, Part 1
 
 In this assignment, you're going to write code for a challenge problem.
