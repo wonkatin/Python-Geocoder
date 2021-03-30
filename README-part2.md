@@ -79,34 +79,35 @@ Note: You will need to register an email address to get an API key, but it is fr
 
 #### Directions for OpenWeather API
 
-When you first log in to the OpenWeather API site, you will see your personal API key, as well as an example of how to use that key to make a call to the API with latitude and longitude coordinates. You can click on this sample call to see what it returns.
+When you first log in to the OpenWeather API site, you will see a link to your API keys (currently in the navbar at the top). Make a _new_ file called `secrets.py` with a variable called API_KEY that holds that API key. Nothing else needs to be in the file to let us import it.
 
-The data is in a form called `JSON`, which is basically a big object. You can see in your web browser what that object looks like. Unless you have a [JSON prettify plug-in](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en), it will probably look like a huge mess of data and curly braces. That's OK! Most importantly, the data we are getting includes a field called `currently`, which includes subfields `summary` and `temperature`, which together give us a pretty good idea of how we should dress for the weather.
+(Although this API key is very low security risk, it's still a good idea to add the `secrets.py` file to your `.gitignore` if it's not there already.)
 
-#### Calling an API
+Now find the API Docs. (Currently the API link in the very top navbar will bring you to their many APIs. You want the "API doc" link for "Current Weather Data".) Hunt down the endpoint URL for getting a result from latitude and longitude. We'll need that later.
 
-We'll be using the [requests module](http://docs.python-requests.org/en/master/api/#module-requests) to call the OpenWeather API. Make sure to `import requests` at the top of your program.
+Back to our `solution.py` program! We'll need to `import` two things:
+
+- We'll be using the [requests module](http://docs.python-requests.org/en/master/api/#module-requests) to call the OpenWeather API. Make sure to `import requests` at the top of your program. You don't need to `pip install` it--it's built in to Python.
+- We'll also need to `import` our `API_KEY` variable from `secrets.py`. We can import from it just as if it were a library. Do a little research on how to pull in that variable, and try to find a solution that specifies _which_ variable we want to import, rather than pulling everything from the file in. (We only have one thing in the file, but this is just good practice.)
 
 #### Starter Code
 
-**Note:** This new code gets put into to your previous code from Problem 1!
+**Note:** This new code gets put into your previous code from Problem 1!
 
 ```python
 # Import the module (top of the file).
 import requests
+# Import API_KEY from your secrets file.
 
-
-# Make sure to replace [YOUR_API_KEY_HERE] with your actual key, which
-# will look like a bunch of letters and numbers! Alternatively, copy the sample
-# API call from OpenWeather dashboard and just remove the coordinates.
-API_BASE_URL = "https://api.darksky.net/forecast/[YOUR_API_KEY_HERE]/"
+# A variable to hold the base url for our API call from the OpenWeather docs.
+API_BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 
 # Previous code still here.
 
 for point in destinations:
-    # Previous `geopy` code still here.
+    # Previous `geocoder` code still here.
 
-    # full_api_url = API_BASE_URL + latitude + "," + longitude
+    # A full_api_url variable that holds our base url and the latitude and longitudes and api key. Check the docs again for the format (and don't forget the ?).
     result = requests.request('GET', full_api_url).json()
 
     # From the result, print out the summary and current temperature.
@@ -142,7 +143,7 @@ Capilano Suspension Bridge is located at (49.3432, -123.1133)
 At Capilano Suspension Bridge right now, it's Mostly Cloudy with a temperature of 65.11
 ```
 
-**Hint:** In the API results, you are accessing an object called `currently`, which has properties called `temperature` and `summary`. Therefore, you can access those fields like so: `result["currently"]["summary"]`.
+**Hint:** In the dictionary that holds the API results, you'll get an awful lot of data. Check the dictionary carefully, remember that dictionaries in Python use brackets and strings to access keys, watch out for lists, and note that the temperature wont come in as Fahrenheit... or Celsius?!
 
 ---
 
@@ -158,6 +159,8 @@ Matt likes Heather's idea of getting the weather for each location they plan on 
 4. Display only one decimal place on the temperature (think about string formatting).
 
 ### Sample Code:Decimal Places Display
+
+There are other ways to format the string. This is one way!
 
 ```python
 # prints 1.23456789
