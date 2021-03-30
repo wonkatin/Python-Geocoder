@@ -41,7 +41,7 @@ for point in destinations:
     weather_description = result['weather'][0]['description']
     kelvin = result["main"]["temp"]
     temperature = (kelvin - 273.15) * 9 / 5 + 32
-    print(f'At {point} right now, its {weather_description} with a temperature of {temperature:.1f}° F \n')   
+    print(f'At {point} right now, its {weather_description} with a temperature of {temperature:.1f}\N{DEGREE SIGN} F \n')   
 
   
     
