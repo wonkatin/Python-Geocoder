@@ -48,8 +48,7 @@ g = geocoder.arcgis('Redlands, California')
 print(g.latlng) # `latlng` is a tuple with a length of 2.
 ```
 
-
-#### Expected Output
+### Expected Output
 
 ```
 Space Needle is located at (47.6205, -122.3493)
@@ -66,8 +65,7 @@ Banff National Park is located at (51.4968, -115.9281)
 Capilano Suspension Bridge is located at (49.3429, -123.1149)
 ```
 
-
-> **Hint:** We're following the pattern in the `geonames` example in the [docs](https://geocoder.readthedocs.io/results.html), but replacing `geonames` with `arcgis`.
+**Hint:** We're following the pattern in the `geonames` example in the [docs](https://geocoder.readthedocs.io/results.html), but replacing `geonames` with `arcgis`.
 
 ---
 
@@ -111,6 +109,7 @@ for point in destinations:
     result = requests.request('GET', full_api_url).json()
 
     # From the result, print out the summary and current temperature.
+
 ```
 
 #### Expected Output
@@ -157,8 +156,7 @@ Matt likes Heather's idea of getting the weather for each location they plan on 
 3. Add a unicode degree character.
 4. Display only one decimal place on the temperature (think about string formatting).
 
-
-#### Sample Code: Decimal Places Display
+### Sample Code:Decimal Places Display
 
 ```python
 # prints 1.23456789
@@ -207,13 +205,9 @@ At Sandpoint, Idaho right now, it's Clear with a temperature of 68.8° F
 Banff National Park is located at (51.1356, -115.4073)
 At Banff National Park right now, it's Partly Cloudy with a temperature of 63.9° F
 
-Capilano Suspension Bridge is located at (49.3432, -123.1133)
+At Banff National Park right now, it's Partly Cloudy with a temperature of 63.9° F
+Capilano Suspension Bridge is located at (49.3432, -123.113)
 At Capilano Suspension Bridge right now, it's Mostly Cloudy with a temperature of 65.1° F
-```
 
-**Hint:** Here's a list of [unicode characters](https://en.wikipedia.org/wiki/List_of_Unicode_characters). Refer to your class notes for how to use an escape character.
----
-
-## Done and done!
-
+> **Hint**: Here's a list of [unicode characters](https://en.wikipedia.org/wiki/List_of_Unicode_characters). Refer to your class notes for how to use an escape character. Done and done!
 ![](https://media.giphy.com/media/PqwqtOLfG19Ti/giphy.gif)
