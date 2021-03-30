@@ -57,7 +57,7 @@ Your job is to put these destinations into a list of strings called `destination
 
 #### Sample Code (`geocoder`/`arcgis`)
 
-This code would give you the latitude and longitude for one destination.
+This code will give you the latitude and longitude for one destination.
 
 ```python
 import geocoder
@@ -68,6 +68,8 @@ print(g.latlng) # latlng is a tuple with a length of 2.
 ```
 
 #### Starter Code
+
+This is the general structure you'll follow to get the results for all of the destinations.
 
 ```python
 import geocoder
