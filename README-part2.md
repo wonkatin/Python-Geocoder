@@ -73,18 +73,19 @@ Capilano Suspension Bridge is located at (49.3429, -123.1149)
 
 ### Skill you're practicing: Calling an API.
 
-Cody is satisfied by geolocating his landmarks, but Heather wants to take it one step further and get the current weather at each location. Help Heather with some code that calls an API to get current weather based on latitude-longitude coordinates. Take Cody's code from Problem 1 and add an API call to [Dark Sky API](https://darksky.net/dev/register).
-> Note: You will need to register an email address to get an API key, but it is free to use.
+Cody is satisfied by geolocating his landmarks, but Heather wants to take it one step further and get the current weather at each location. Help Heather with some code that calls an API to get current weather based on the latitude-longitude coordinates you already have. Take Cody's code from Problem 1 and add an API call to [OpenWeather](https://home.openweathermap.org/user/sign_up).
 
-#### Directions for Dark Sky API
+Note: You will need to register an email address to get an API key, but it is free to use.
 
-When you first log in to the Dark Sky API site, you will see your personal API key, as well as an example of how to use that key to make a call to the API with latitude and longitude coordinates. You can click on this sample call to see what it returns.
+#### Directions for OpenWeather API
+
+When you first log in to the OpenWeather API site, you will see your personal API key, as well as an example of how to use that key to make a call to the API with latitude and longitude coordinates. You can click on this sample call to see what it returns.
 
 The data is in a form called `JSON`, which is basically a big object. You can see in your web browser what that object looks like. Unless you have a [JSON prettify plug-in](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en), it will probably look like a huge mess of data and curly braces. That's OK! Most importantly, the data we are getting includes a field called `currently`, which includes subfields `summary` and `temperature`, which together give us a pretty good idea of how we should dress for the weather.
 
 #### Calling an API
 
-We'll be using the [requests module](http://docs.python-requests.org/en/master/api/#module-requests) to call the Dark Sky API. Make sure to `import requests` at the top of your program.
+We'll be using the [requests module](http://docs.python-requests.org/en/master/api/#module-requests) to call the OpenWeather API. Make sure to `import requests` at the top of your program.
 
 #### Starter Code
 
@@ -97,7 +98,7 @@ import requests
 
 # Make sure to replace [YOUR_API_KEY_HERE] with your actual key, which
 # will look like a bunch of letters and numbers! Alternatively, copy the sample
-# API call from Dark Sky dashboard and just remove the coordinates.
+# API call from OpenWeather dashboard and just remove the coordinates.
 API_BASE_URL = "https://api.darksky.net/forecast/[YOUR_API_KEY_HERE]/"
 
 # Previous code still here.
