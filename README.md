@@ -1,5 +1,3 @@
-One possible set of solutions to this assignment. Original readme follows:
-
 # Python Modules, Packages, and APIs: Practice Problems, Part 1
 
 In this assignment, you're going to write code for a challenge problem.
@@ -16,13 +14,13 @@ You will practice these programming concepts we've covered in class:
 
 This lab will be a two-part code challenge with a bonus. It will be a little different than the other assignments because Part 2 will build on the code from Part 1. You can put all of your code in one file called `solution.py`. Right now, just make that one file.
 
-_Reminder: On your laptop, you can run the file from your command line with the following:_
+_Reminder: you can run the file from your command line with the following:_
 
-```python
+```bash
 python solution.py
 ```
 
-> **Hint:** Make sure you are printing something out with the `print` statement. Otherwise, you won't see any output from running your program!
+> **Hint:** Make sure your `solution.py` program is printing something out with a `print` statement. Otherwise, you won't see any output from running it!
 
 ## Requirements:
 
@@ -36,7 +34,7 @@ By the end of this, you should have:
 
 ## Problem 1: Geo Cody
 
-### Skill you're practicing: Importing and using modules/packages.
+### Skill you're practicing: importing and using modules/packages.
 
 Cody and his friends Heather and Matt are going on a road trip across the Western United States and Canada. They want to visit several landmarks, national parks, and big cities. Here's their agenda:
 
@@ -55,9 +53,11 @@ Banff National Park
 Capilano Suspension Bridge
 ```
 
-Your job is to put these destinations into a list of strings called `destinations`. Then, import the [geocoder module](https://geocoder.readthedocs.io/providers/ArcGIS.html#geocoding) and use it to translate each of the landmarks into latitude-longitude coordinates. You'll need to loop through the list and print each location's latitude and longitude. We will be using `arcgis` to translate the places to coordinates. Visit the [docs](https://geocoder.readthedocs.io/results.html) for more sample code.
+Your job is to put these destinations into a list of strings called `destinations`. Then, import the [geocoder module](https://geocoder.readthedocs.io/providers/ArcGIS.html#geocoding) and use it to translate each of the landmarks into latitude-longitude coordinates. You'll need to loop through the list and print each location's latitude and longitude. We will be using the `arcgis` method from our `geocoder` module to translate the places to coordinates. Visit the [docs](https://geocoder.readthedocs.io/results.html) for sample code.
 
 #### Sample Code (`geocoder`/`arcgis`)
+
+This code would give you the latitude and longitude for one destination.
 
 ```python
 import geocoder
@@ -75,7 +75,7 @@ import geocoder
 # Declare destinations list here.
 
 # Loop through each destination.
-for point in destinations:
+for destination in destinations:
 #   Get the lat-long coordinates from `geocoder.arcgis`.
 #   Print out the place name and the coordinates.
 ```
