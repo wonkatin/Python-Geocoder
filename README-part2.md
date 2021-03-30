@@ -73,7 +73,7 @@ Capilano Suspension Bridge is located at (49.3429, -123.1149)
 
 ### Skill you're practicing: Calling an API.
 
-Cody is satisfied by geolocating his landmarks, but Heather wants to take it one step further and get the current weather at each location. Help Heather with some code that calls an API to get current weather based on the latitude-longitude coordinates you already have. Take Cody's code from Problem 1 and add an API call to [OpenWeather](https://home.openweathermap.org/user/sign_up).
+Cody is satisfied by geolocating his landmarks, but Heather wants to take it one step further and get the current weather at each location. Help Heather with some code that calls an API to get current weather based on the latitude-longitude coordinates you already have. Take Cody's code from Problem 1 and add an API call to [OpenWeather](https://home.openweathermap.org/users/sign_up).
 
 Note: You will need to register an email address to get an API key, but it is free to use.
 
