@@ -1,43 +1,32 @@
-### ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Python Programming
-
-<!---
-This assignment was developed by Brandi
-
-Questions? Comments?
-1. Log an issue to this repo to alert me of a problem.
-2. Suggest an edit yourself by forking this repo, making edits, and submitting a pull request with your changes back to our master branch.
-3. Hit me up on Slack at @brandib.
---->
-
 # Python Modules, Packages, and APIs: Practice Problems, Part 2
 
 In this lab, you're going to write code for the second of the two challenge problems. This code will continue off your code from the previous homework.
 
 You will practice these programming concepts we've covered in class:
 
-* Including and using modules and packages.
-* Using data from APIs.
-* Reading documentation for modules and APIs.
+- Including and using modules and packages.
+- Using data from APIs.
+- Reading documentation for modules and APIs.
 
 ---
 
 ## Deliverables
 
-This lab is the second of a two-part code challenge, plus a bonus challenge. It is a little different than the other homeworks because this assignment will build on the code from Part 1, the previous homework. For your solution here, you can directly edit the `solution.py` file from the previous assignment.
+This lab is the second of a two-part code challenge, plus a bonus challenge. It is a little different than the other homeworks because this assignment will build on the code from Part 1. For your solution here, you can directly edit the `solution.py` file from the previous assignment.
 
-*Reminder: On your laptop, you can run the file from your command line with the following:*
+\_Reminder: you can run the file from your command line with the following:\_
 
-```python
-python solution.py
+```bash
+pytho_ solution.py
 ```
 
 > **Hint:** Make sure you are printing something out with the `print` statement. Otherwise, you won't see any output from running your program!
 
+# Requirements:
 
-## Requirements:
+y the end of this, you should have:
 
-By the end of this, you should have:
-* A file called `solution.py` with your combined code from Parts 1 and 2 (and, if you attempted it, the bonus portion).
+-- A file called `solution.py` with your combined code from Parts 1 and 2 (and, if you attempted it, the bonus portion).
 
 ---
 
