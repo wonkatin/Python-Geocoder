@@ -209,6 +209,8 @@ At Banff National Park right now, it's Partly Cloudy with a temperature of 63.9�
 At Banff National Park right now, it's Partly Cloudy with a temperature of 63.9° F
 Capilano Suspension Bridge is located at (49.3432, -123.113)
 At Capilano Suspension Bridge right now, it's Mostly Cloudy with a temperature of 65.1° F
+```
 
 > **Hint**: Here's a list of [unicode characters](https://en.wikipedia.org/wiki/List_of_Unicode_characters). Refer to your class notes for how to use an escape character. Done and done!
+
 ![](https://media.giphy.com/media/PqwqtOLfG19Ti/giphy.gif)
