@@ -14,19 +14,19 @@ You will practice these programming concepts we've covered in class:
 
 This lab is the second of a two-part code challenge, plus a bonus challenge. It is a little different than the other homeworks because this assignment will build on the code from Part 1. For your solution here, you can directly edit the `solution.py` file from the previous assignment.
 
-\_Reminder: you can run the file from your command line with the following:\_
+Reminder: you can run the file from your command line with the following:
 
 ```bash
-pytho_ solution.py
+python solution.py
 ```
 
 > **Hint:** Make sure you are printing something out with the `print` statement. Otherwise, you won't see any output from running your program!
 
 # Requirements:
 
-y the end of this, you should have:
+By the end of this, you should have:
 
--- A file called `solution.py` with your combined code from Parts 1 and 2 (and, if you attempted it, the bonus portion).
+- A file called `solution.py` with your combined code from Parts 1 and 2 (and, if you attempted it, the bonus portion).
 
 ---
 
