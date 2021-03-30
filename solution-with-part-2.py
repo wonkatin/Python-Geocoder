@@ -1,7 +1,8 @@
 import requests
 import geocoder
+from secrets import API_KEY
 
-API_KEY = "fd7798752d02d8f1386455e5e17b8a1a"
+
 API_BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 
 destinations = [
