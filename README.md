@@ -111,4 +111,4 @@ Take a look at the solution branch to check your work!
 
 ![](https://gph.is/2hSpbC3)
 
-Unless... you'd like to tackle [part 2](part2.md) as a bonus?
+Unless... you'd like to tackle [part 2](README-part2.md) as a bonus?
