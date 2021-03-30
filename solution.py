@@ -40,8 +40,8 @@ for point in destinations:
     result = requests.request('GET', full_api_url).json()
     weather_description = result['weather'][0]['description']
     kelvin = result["main"]["temp"]
-    # temperature = (kelvin - 273.15) * 9 / 5 + 32
-    print(f'At {point} right now, its {weather_description} with a temperature of {kelvin} in Kelvin, exciting!')   
+    temperature = (kelvin - 273.15) * 9 / 5 + 32
+    print(f'At {point} right now, its {weather_description} with a temperature of {temperature:.1f}° F \n')   
 
   
     
